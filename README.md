@@ -1,7 +1,7 @@
 
 # Content Recommendation System using AWS Personalize
 
-For creating this content recommendation system, we will have to use mainly two services, Amazon S3 and Amazon Personalize. Amazon personalise is used to implement algorithms and use them on datasets to get personalised rankings for a particular user for every listed product. We have used amazon-personalised-ranking algorithm in this implementation and this algorithm gives us scores of the particular item/movie out of 1; 0 being the worst ranking and 1 being the best ranking
+ To create a Content Recommendation System (CRS), we will have to use mainly two services, Amazon S3 and Amazon Personalize. Amazon Personalise is used to implement algorithms and use them on datasets to get personalised rankings for a particular user for every listed product. We have used amazon-personalised-ranking algorithm in this implementation and this algorithm gives us scores of the particular item/movie out of 1; 0 being the worst ranking and 1 being the best ranking
 
 
 ## Steps
@@ -130,7 +130,7 @@ The first parameter contains USER_ID where and the second parameter contains ITE
 - Therefore by just integrating these two simple services, we have successfully created a back-end for a Content recommendation system which will allow us to get personalised rankings and tell us that a user is more likely to like which items.
 
 
-
+Note: It is mandatory to create IAM Roles and assign permission for each service, and here, to let Personalize access the datasets/files stored in our S3 bucket.
 
 
 
@@ -138,7 +138,7 @@ The first parameter contains USER_ID where and the second parameter contains ITE
 
 ## Documentation
 
-[Link to the Dataset](https://drive.google.com/drive/folders/1zpe4dqlkvIIsFqqjkM-ZpkKV80N4JInO?usp=sharing)
+Dataset Courtesy: https://grouplens.org/datasets/movielens/
 
 Here the three datasets corelate to:
 - Movies (Item dataset)
